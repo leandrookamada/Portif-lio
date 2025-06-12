@@ -1,11 +1,14 @@
 header {
   display: flex;
+  position: fixed;
+  z-index: 1;
   flex-flow: row nowrap;
   justify-content: space-between;
   justify-content: center;
 
   gap: 10px;
   margin: 0.9em;
+  width: 98%;
 }
 .header_div {
   background-color: var(--color1);
@@ -29,7 +32,7 @@ header {
   margin: 0.625em;
   border-radius: 1em;
 
-  font-family: var(--fonttitulo);
+  font-family: var(--fonttexto);
 }
 .header_nav_ul_li:hover {
   background-color: var(--color3);

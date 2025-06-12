@@ -3,12 +3,3 @@
   margin: 0px;
   padding: 0px;
 }
-:root {
-  --color1: #111111; /* Cor de contraste */
-  --color2: #ffffff; /* Cor princial */
-  --color3: #777777; /* Textos */
-  --color4: #00a8e8; /* Destaques e botôes */
-
-  --fonttitulo: serif;
-  --fonttexto: sans-serif;
-}

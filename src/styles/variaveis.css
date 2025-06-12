@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200..700&family=Share+Tech+Mono&display=swap");
+:root {
+  --color1: #111111; /* Cor de contraste */
+  --color2: #ffffff; /* Cor princial */
+  --color3: #777777; /* Textos */
+  --color4: #00a8e8; /* Destaques e botôes */
+
+  --fonttitulo: "Anton", sans-serif;
+  --fontsubtitulo: "Oswald", sans-serif;
+  --fonttexto: "Share Tech Mono", monospace;
+}
