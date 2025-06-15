@@ -21,8 +21,10 @@ body {
   letter-spacing: 0.1em;
   font-weight: 600;
   font-size: 2.5em;
+  align-items: center;
 }
 .h2 {
+  align-items: center;
   font-family: var(--fontsubtitulo);
 }
 .p {
