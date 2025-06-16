@@ -8,16 +8,10 @@ export function Header() {
       <nav className={styles.header_nav}>
         <ul className={styles.header_nav_ul}>
           <li className={styles.header_nav_ul_li}>
-            <a href="#">Sobre mim</a>
-          </li>
-          <li className={styles.header_nav_ul_li}>
             <a href="#">Habilidades</a>
           </li>
           <li className={styles.header_nav_ul_li}>
             <a href="#">Projetos</a>
-          </li>
-          <li className={styles.header_nav_ul_li}>
-            <a href="#">Experiência</a>
           </li>
           <li className={styles.header_nav_ul_li}>
             <a href="#">Contatos</a>
