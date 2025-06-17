@@ -9,6 +9,7 @@ header {
   gap: 10px;
   margin: 0.9em;
   width: 98%;
+  z-index: 2;
 }
 .header_div {
   background-color: var(--color1);

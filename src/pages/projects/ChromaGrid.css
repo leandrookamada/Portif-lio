@@ -1,17 +1,27 @@
+.main_chrima-grid {
+  display: flex;
+  justify-content: flex-start; /* <-- mudar aqui */
+  align-items: center;
+  width: 98vw;
+  height: 100vh;
+  background-color: yellow;
+  padding: 0; /* opcional: margem da borda direita */
+  box-sizing: border-box;
+}
 .chroma-grid {
   position: relative;
-  width: 100%;
-  height: 100%;
+  /* height: 100vh; */
   display: grid;
   grid-template-columns: repeat(var(--cols, 3), 320px);
   grid-auto-rows: auto;
   justify-content: right;
   gap: 0.75rem;
-  max-width: 1200px;
-  margin: 0 auto;
+
   padding: 1rem;
   box-sizing: border-box;
-
+  width: 100%; /* ocupa tudo dentro da main */
+  max-width: 100%; /* evita ultrapassar */
+  margin: 0 auto;
   --x: 50%;
   --y: 50%;
   --r: 220px;
@@ -32,7 +42,6 @@
     padding: 1rem;
   }
 }
-
 .chroma-card {
   position: relative;
   display: flex;
@@ -66,7 +75,7 @@
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.5s ease;
-  z-index: 2;
+  z-index: 0;
 }
 
 .chroma-card:hover::before {
@@ -75,9 +84,9 @@
 
 .chroma-img-wrapper {
   position: relative;
-  z-index: 1;
+  z-index: 0;
   flex: 1;
-  padding: 10px;
+  padding: 1em;
   box-sizing: border-box;
   background: transparent;
   transition: background 0.3s ease;
@@ -93,8 +102,9 @@
 
 .chroma-info {
   position: relative;
-  z-index: 1;
+  z-index: 0;
   padding: 0.75rem 1rem;
+  margin-bottom: 1em;
   color: #fff;
   font-family: system-ui, sans-serif;
   display: grid;
@@ -102,7 +112,6 @@
   row-gap: 0.25rem;
   column-gap: 0.75rem;
 }
-
 .chroma-info .role,
 .chroma-info .handle {
   color: #aaa;
@@ -112,7 +121,7 @@
   position: absolute;
   inset: 0;
   pointer-events: none;
-  z-index: 3;
+  z-index: 0;
   backdrop-filter: grayscale(1) brightness(0.78);
   -webkit-backdrop-filter: grayscale(1) brightness(0.78);
   background: rgba(0, 0, 0, 0.001);
