@@ -1,6 +1,7 @@
 body {
   width: 100vw;
   height: 99vh;
+  background-color: var(--color4);
 }
 .main {
   display: flex;

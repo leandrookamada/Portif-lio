@@ -1,5 +1,5 @@
 import styles from "./quemSou.module.css";
-import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+// import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 export function QuemSou() {
   return (
     <main className={styles.main}>
