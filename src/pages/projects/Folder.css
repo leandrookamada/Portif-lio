@@ -9,8 +9,17 @@
 .folder {
   transition: all 0.2s ease-in;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  height: 100vh;
 }
-
+.main_folder {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
 .folder:not(.folder--click):hover {
   transform: translateY(-8px);
 }

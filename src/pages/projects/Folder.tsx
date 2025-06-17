@@ -98,36 +98,38 @@ const Folder: React.FC<FolderProps> = ({
   const scaleStyle = { transform: `scale(${size})` };
 
   return (
-    <div style={scaleStyle} className={className}>
-      <div
-        className={folderClassName}
-        style={folderStyle}
-        onClick={handleClick}
-      >
-        <div className="folder__back">
-          {papers.map((item, i) => (
-            <div
-              key={i}
-              className={`paper paper-${i + 1}`}
-              onMouseMove={e => handlePaperMouseMove(e, i)}
-              onMouseLeave={e => handlePaperMouseLeave(e, i)}
-              style={
-                open
-                  ? ({
-                      "--magnet-x": `${paperOffsets[i]?.x || 0}px`,
-                      "--magnet-y": `${paperOffsets[i]?.y || 0}px`,
-                    } as React.CSSProperties)
-                  : {}
-              }
-            >
-              {item}
-            </div>
-          ))}
-          <div className="folder__front"></div>
-          <div className="folder__front right"></div>
+    <main className="main_folder">
+      <div style={scaleStyle} className={className}>
+        <div
+          className={folderClassName}
+          style={folderStyle}
+          onClick={handleClick}
+        >
+          <div className="folder__back">
+            {papers.map((item, i) => (
+              <div
+                key={i}
+                className={`paper paper-${i + 1}`}
+                onMouseMove={e => handlePaperMouseMove(e, i)}
+                onMouseLeave={e => handlePaperMouseLeave(e, i)}
+                style={
+                  open
+                    ? ({
+                        "--magnet-x": `${paperOffsets[i]?.x || 0}px`,
+                        "--magnet-y": `${paperOffsets[i]?.y || 0}px`,
+                      } as React.CSSProperties)
+                    : {}
+                }
+              >
+                {item}
+              </div>
+            ))}
+            <div className="folder__front"></div>
+            <div className="folder__front right"></div>
+          </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 
