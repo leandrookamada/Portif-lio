@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 
 import { Layout } from "./components/layout/layout";
-import Folder from "./pages/projects/Folder";
+import ChromaGrid from "./pages/projects/ChromaGrid";
 const Router = createBrowserRouter([
   {
     path: "/",
@@ -9,7 +9,7 @@ const Router = createBrowserRouter([
     children: [
       {
         path: "/folder",
-        element: <Folder />,
+        element: <ChromaGrid />,
       },
     ],
   },
