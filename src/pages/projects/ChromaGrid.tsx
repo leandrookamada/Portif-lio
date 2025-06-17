@@ -127,7 +127,14 @@ export const ChromaGrid: React.FC<ChromaGridProps> = ({
 
   const handleMove = (e: React.PointerEvent) => {
     const r = rootRef.current!.getBoundingClientRect();
-    moveTo(e.clientX - r.left, e.clientY - r.top);
+    const x = e.clientX - r.left; // Coordenada X relativa ao container
+    const y = e.clientY - r.top; // Coordenada Y relativa ao container
+
+    // Aplica as coordenadas corretamente
+    rootRef.current!.style.setProperty("--x", `${x}px`);
+    rootRef.current!.style.setProperty("--y", `${y}px`);
+
+    moveTo(x, y);
     gsap.to(fadeRef.current, { opacity: 0, duration: 0.25, overwrite: true });
   };
 

@@ -14,7 +14,7 @@
 
   padding: 1rem;
   box-sizing: border-box;
-  width: 100%;
+  width: 60vw;
   /* max-width: 100%; evita ultrapassar */
   --x: 50%;
   --y: 50%;
@@ -113,13 +113,14 @@
 
 .chroma-overlay {
   position: absolute;
-  justify-content: end;
+  left: 0;
+  top: 0;
   width: 60vw; /* agora usando viewport units */
-  height: 100vh;
+  height: auto;
+  overflow: hidden;
   inset: 0;
   pointer-events: none;
   z-index: 1;
-  width: 60%;
   backdrop-filter: grayscale(1) brightness(0.78);
   -webkit-backdrop-filter: grayscale(1) brightness(0.78);
   background: rgba(0, 0, 0, 0.001);
