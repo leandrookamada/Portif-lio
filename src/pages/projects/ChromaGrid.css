@@ -1,20 +1,14 @@
-.main_chrima-grid {
+/* .main_chroma-grid {
   display: flex;
-  justify-content: flex-end; /* <-- mudar aqui */
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-  box-sizing: border-box;
-  overflow-x: hidden;
-  background-color: yellow;
-}
+  justify-content: flex-end;
+} */
 .chroma-grid {
-  /* position: relative; */
+  position: relative;
   /* height: 100vh; */
   display: grid;
-  grid-template-columns: repeat(var(--cols, 3), 320px);
+  grid-template-columns: repeat(var(--cols, 3), 20em);
   grid-auto-rows: auto;
-  justify-content: right;
+  justify-content: flex-end;
   align-items: center;
   gap: 0.75rem;
 
@@ -22,10 +16,9 @@
   box-sizing: border-box;
   width: 100%;
   /* max-width: 100%; evita ultrapassar */
-  margin: 0 auto;
   --x: 50%;
   --y: 50%;
-  --r: 220px;
+  --r: 16em;
 }
 
 @media (max-width: 1124px) {
@@ -44,10 +37,10 @@
   }
 }
 .chroma-card {
-  /* position: relative; */
+  position: relative;
   display: flex;
   flex-direction: column;
-  width: 19em;
+  width: 18em;
   height: auto;
   border-radius: 20px;
   overflow: hidden;
@@ -55,8 +48,8 @@
   transition: border-color 0.3s ease;
   background: var(--card-gradient);
 
-  --mouse-x: 50%;
-  --mouse-y: 50%;
+  --mouse-x: 100%;
+  --mouse-y: 100%;
   --spotlight-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -66,7 +59,7 @@
 
 .chroma-card::before {
   content: "";
-  /* position: absolute; */
+  position: absolute;
   inset: 0;
   background: radial-gradient(
     circle at var(--mouse-x) var(--mouse-y),
@@ -84,7 +77,7 @@
 }
 
 .chroma-img-wrapper {
-  /* position: relative; */
+  position: relative;
   z-index: 0;
   flex: 1;
   padding: 1em;
@@ -102,7 +95,7 @@
 }
 
 .chroma-info {
-  /* position: relative; */
+  position: relative;
   z-index: 0;
   padding: 0.75rem 1rem;
   margin-bottom: 1em;
@@ -120,9 +113,13 @@
 
 .chroma-overlay {
   position: absolute;
+  justify-content: end;
+  width: 60vw; /* agora usando viewport units */
+  height: 100vh;
   inset: 0;
   pointer-events: none;
-  z-index: 0;
+  z-index: 1;
+  width: 60%;
   backdrop-filter: grayscale(1) brightness(0.78);
   -webkit-backdrop-filter: grayscale(1) brightness(0.78);
   background: rgba(0, 0, 0, 0.001);

@@ -155,7 +155,7 @@ export const ChromaGrid: React.FC<ChromaGridProps> = ({
   };
 
   return (
-    <main className="main_chrima-grid">
+    <main className="main_chroma-grid">
       <div
         ref={rootRef}
         className={`chroma-grid ${className}`}
