@@ -1,26 +1,27 @@
 .main_chrima-grid {
   display: flex;
-  justify-content: flex-start; /* <-- mudar aqui */
+  justify-content: flex-end; /* <-- mudar aqui */
   align-items: center;
-  width: 98vw;
+  width: 100vw;
   height: 100vh;
-  background-color: yellow;
-  padding: 0; /* opcional: margem da borda direita */
   box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: yellow;
 }
 .chroma-grid {
-  position: relative;
+  /* position: relative; */
   /* height: 100vh; */
   display: grid;
   grid-template-columns: repeat(var(--cols, 3), 320px);
   grid-auto-rows: auto;
   justify-content: right;
+  align-items: center;
   gap: 0.75rem;
 
   padding: 1rem;
   box-sizing: border-box;
-  width: 100%; /* ocupa tudo dentro da main */
-  max-width: 100%; /* evita ultrapassar */
+  width: 100%;
+  /* max-width: 100%; evita ultrapassar */
   margin: 0 auto;
   --x: 50%;
   --y: 50%;
@@ -43,10 +44,10 @@
   }
 }
 .chroma-card {
-  position: relative;
+  /* position: relative; */
   display: flex;
   flex-direction: column;
-  width: 320px;
+  width: 19em;
   height: auto;
   border-radius: 20px;
   overflow: hidden;
@@ -65,7 +66,7 @@
 
 .chroma-card::before {
   content: "";
-  position: absolute;
+  /* position: absolute; */
   inset: 0;
   background: radial-gradient(
     circle at var(--mouse-x) var(--mouse-y),
@@ -83,7 +84,7 @@
 }
 
 .chroma-img-wrapper {
-  position: relative;
+  /* position: relative; */
   z-index: 0;
   flex: 1;
   padding: 1em;
@@ -101,7 +102,7 @@
 }
 
 .chroma-info {
-  position: relative;
+  /* position: relative; */
   z-index: 0;
   padding: 0.75rem 1rem;
   margin-bottom: 1em;

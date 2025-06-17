@@ -9,3 +9,8 @@
   --fontsubtitulo: "Oswald", sans-serif;
   --fonttexto: "Share Tech Mono", monospace;
 }
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color4);
+}
