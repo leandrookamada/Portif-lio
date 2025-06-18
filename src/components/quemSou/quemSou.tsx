@@ -1,9 +1,20 @@
 import styles from "./quemSou.module.css";
+import BlurText from "../../block/TextAnimations/BlurText/BlurText";
 // import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 export function QuemSou() {
+  const handleAnimationComplete = () => {
+    console.log("Animation completed!");
+  };
   return (
     <main className={styles.main}>
-      <h1 className={styles.h1}>Leandro Kamada</h1>
+      <BlurText
+        text="Leandro Kamada"
+        delay={200}
+        animateBy="letters"
+        direction="top"
+        onAnimationComplete={handleAnimationComplete}
+        className={styles.BlurText}
+      />
       <h2 className={styles.h2}>Desenvolvedor Full Stack</h2>
       <p className={styles.p}>
         Desenvolvedor Web apaixonado por criar soluções eficientes e intuitivas.

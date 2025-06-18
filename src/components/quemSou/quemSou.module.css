@@ -9,14 +9,14 @@
 
   width: 40vw;
   height: 100%;
-  padding: 5em;
-  gap: 1em;
+  padding: 0 5em;
+  gap: 2em;
 }
-.h1 {
+.BlurText {
   font-family: var(--fonttitulo);
   letter-spacing: 0.1em;
   font-weight: 600;
-  font-size: 2.5rem;
+  font-size: 3rem;
   align-items: center;
 }
 .h2 {

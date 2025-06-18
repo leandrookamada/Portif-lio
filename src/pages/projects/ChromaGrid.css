@@ -126,7 +126,7 @@ h1 {
   z-index: 1;
   backdrop-filter: grayscale(1) brightness(0.78);
   -webkit-backdrop-filter: grayscale(1) brightness(0.78);
-  background: rgba(0, 0, 0, 0.001);
+  background: var(--color3-);
 
   mask-image: radial-gradient(
     circle var(--r) at var(--x) var(--y),
