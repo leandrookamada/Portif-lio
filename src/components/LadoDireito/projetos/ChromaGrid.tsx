@@ -162,50 +162,47 @@ export const ChromaGrid: React.FC<ChromaGridProps> = ({
   };
 
   return (
-    <main className="main_chroma-grid">
-      <h1>PROJETOS</h1>
-      <div
-        ref={rootRef}
-        className={`chroma-grid ${className}`}
-        style={
-          {
-            "--r": `${radius}px`,
-            "--cols": columns,
-            "--rows": rows,
-          } as React.CSSProperties
-        }
-        onPointerMove={handleMove}
-        onPointerLeave={handleLeave}
-      >
-        {data.map((c, i) => (
-          <article
-            key={i}
-            className="chroma-card"
-            onMouseMove={handleCardMove}
-            onClick={() => handleCardClick(c.url)}
-            style={
-              {
-                "--card-border": c.borderColor || "transparent",
-                "--card-gradient": c.gradient,
-                cursor: c.url ? "pointer" : "default",
-              } as React.CSSProperties
-            }
-          >
-            <div className="chroma-img-wrapper">
-              <img src={c.image} alt={c.title} loading="lazy" />
-            </div>
-            <footer className="chroma-info">
-              <h3 className="name">{c.title}</h3>
-              {c.handle && <span className="handle">{c.handle}</span>}
-              <p className="role">{c.subtitle}</p>
-              {c.location && <span className="location">{c.location}</span>}
-            </footer>
-          </article>
-        ))}
-        <div className="chroma-overlay" />
-        <div ref={fadeRef} className="chroma-fade" />
-      </div>
-    </main>
+    <div
+      ref={rootRef}
+      className={`chroma-grid ${className}`}
+      style={
+        {
+          "--r": `${radius}px`,
+          "--cols": columns,
+          "--rows": rows,
+        } as React.CSSProperties
+      }
+      onPointerMove={handleMove}
+      onPointerLeave={handleLeave}
+    >
+      {data.map((c, i) => (
+        <article
+          key={i}
+          className="chroma-card"
+          onMouseMove={handleCardMove}
+          onClick={() => handleCardClick(c.url)}
+          style={
+            {
+              "--card-border": c.borderColor || "transparent",
+              "--card-gradient": c.gradient,
+              cursor: c.url ? "pointer" : "default",
+            } as React.CSSProperties
+          }
+        >
+          <div className="chroma-img-wrapper">
+            <img src={c.image} alt={c.title} loading="lazy" />
+          </div>
+          <footer className="chroma-info">
+            <h3 className="name">{c.title}</h3>
+            {c.handle && <span className="handle">{c.handle}</span>}
+            <p className="role">{c.subtitle}</p>
+            {c.location && <span className="location">{c.location}</span>}
+          </footer>
+        </article>
+      ))}
+      <div className="chroma-overlay" />
+      <div ref={fadeRef} className="chroma-fade" />
+    </div>
   );
 };
 
