@@ -1,18 +1,18 @@
 import { Outlet } from "react-router-dom";
 import { Header } from "../header/header";
-import { QuemSou } from "../quemSou/quemSou"; // <-- Primeira letra MAIÚSCULA
-import Folder from "../../pages/projects/ChromaGrid";
+import { QuemSou } from "../LadoEsquerdo/quemSou/quemSou"; // <-- Primeira letra MAIÚSCULA
+import Folder from "../LadoDireito/projetos/ChromaGrid";
 import "./layout.css";
 
 export function Layout() {
   return (
     <>
       <Header />
-      <div className="bodyy">
-        <div>
-          <QuemSou /> {/* <-- Também aqui */}
+      <div className="Layout-div">
+        <div className="Lado-Esquerdo">
+          <QuemSou />
         </div>
-        <div>
+        <div className="Lado-Direito">
           <Folder />
         </div>
       </div>

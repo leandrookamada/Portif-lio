@@ -1,5 +1,5 @@
 import styles from "./quemSou.module.css";
-import BlurText from "../../block/TextAnimations/BlurText/BlurText";
+import BlurText from "../../../block/TextAnimations/BlurText/BlurText";
 // import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 export function QuemSou() {
   const handleAnimationComplete = () => {

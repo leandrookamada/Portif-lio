@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 
 import { Layout } from "./components/layout/layout";
-import ChromaGrid from "./pages/projects/ChromaGrid";
+import ChromaGrid from "./components/LadoDireito/projetos/ChromaGrid";
 const Router = createBrowserRouter([
   {
     path: "/",
