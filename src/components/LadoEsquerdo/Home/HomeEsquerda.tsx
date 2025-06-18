@@ -1,7 +1,7 @@
-import styles from "./quemSou.module.css";
+import styles from "./HomeEsquerda.module.css";
 import BlurText from "../../../block/TextAnimations/BlurText/BlurText";
 // import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
-export function QuemSou() {
+export function HomeEsquerda() {
   const handleAnimationComplete = () => {
     console.log("Animation completed!");
   };

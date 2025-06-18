@@ -6,12 +6,12 @@ const Router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
-    children: [
-      {
-        path: "/folder",
-        element: <ChromaGrid />,
-      },
-    ],
+    // children: [
+    //   {
+    //     path: "/folder",
+    //     element: <ChromaGrid />,
+    //   },
+    // ],
   },
 ]);
 export { Router };
