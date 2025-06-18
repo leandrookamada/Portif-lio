@@ -3,4 +3,25 @@
   width: 100vw;
   display: grid;
   grid-template-columns: 40vw 60vw;
+  overflow-x: hidden;
 }
+@media (max-width: 1000px) {
+  .Layout-div {
+    display: block;
+  }
+  .Lado-Esquerdo {
+    width: 100vw;
+    height: 100vh;
+  }
+  .Lado-Direito {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+/* @media (max-width: 480px) {
+  .chroma-grid {
+    grid-template-columns: 320px;
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+} */

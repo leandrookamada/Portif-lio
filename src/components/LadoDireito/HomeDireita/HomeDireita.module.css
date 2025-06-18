@@ -1,0 +1,13 @@
+.divHomeDireita {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+
+  height: 100vh;
+  width: 100%;
+}
+.PerfilPrincipal {
+  position: absolute;
+  height: 40em;
+}
