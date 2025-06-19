@@ -1,7 +1,7 @@
 import SpotlightCard from "../../../block/Components/SpotlightCard/SpotlightCard";
 import styles from "./Projects.module.css";
-import imagemEx from "../../../../public/og_og_156276560725269885.jpg";
-import imagemEx2 from "../../../../public/dbfdb1114131382780590f3d146980e7.jpg";
+import imagemEx from "../../../public/og_og_156276560725269885.jpg";
+import imagemEx2 from "../../../public/dbfdb1114131382780590f3d146980e7.jpg";
 import PixelTransition from "../../../block/Animations/PixelTransition/PixelTransition";
 import Squares from "../../../block/Backgrounds/Squares/Squares";
 
@@ -16,7 +16,7 @@ export function Projects() {
         hoverFillColor="#222"
       />
       <main className={styles.mainProjects}>
-        ;<h1 className={styles.h1Projects}>UM POUCO DOS MEUS PROJETOS</h1>
+        <h1 className={styles.h1Projects}>UM POUCO DOS MEUS PROJETOS</h1>
         <section className={styles.sectionProjects}>
           <div className={styles.divProjects}>
             <SpotlightCard

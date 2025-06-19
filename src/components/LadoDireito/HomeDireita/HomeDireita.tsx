@@ -1,5 +1,5 @@
 import styles from "./HomeDireita.module.css";
-import PerfilPrincipal from "../../../../public/principalPerfil. .png";
+import PerfilPrincipal from "../../../public/principalPerfil. .png";
 import Orb from "../../../block/Backgrounds/Orb/Orb";
 
 export function HomeDireita() {

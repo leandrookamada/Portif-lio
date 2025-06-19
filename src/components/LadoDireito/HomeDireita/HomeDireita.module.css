@@ -9,5 +9,10 @@
 }
 .PerfilPrincipal {
   position: absolute;
-  height: 40em;
+  height: 30em;
+}
+@media (max-width: 1000px) {
+  .PerfilPrincipal {
+    height: 30em;
+  }
 }

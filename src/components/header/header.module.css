@@ -4,18 +4,19 @@ header {
   z-index: 1;
   flex-flow: row nowrap;
   justify-content: space-between;
-  justify-content: center;
+  justify-content: end;
 
   gap: 10px;
   margin: 0.9em;
+  padding-right: 7em;
   width: 98%;
   z-index: 2;
 }
 
 .header_nav {
-  background-color: var(--color1);
+  background-color: #1111117d;
   border-radius: 1em;
-  width: 50vw;
+  width: 40vw;
 }
 .header_nav_ul {
   display: flex;
@@ -44,12 +45,7 @@ header {
   transition: 0.5s;
 }
 @media (max-width: 1000px) {
-  .header_div {
-    background-color: var(--color1);
-    border-radius: 1em;
-    width: 8em;
-  }
-  .header_nav {
-    flex: 1;
+  .header {
+    display: none;
   }
 }
