@@ -14,17 +14,32 @@ export function HomeEsquerda() {
     {
       icon: <FaGithub size={42} />,
       label: "Github",
-      onClick: () => navigate("https://github.com/leandrookamada"),
+      onClick: () =>
+        window.open(
+          "https://github.com/leandrookamada",
+          "_blank",
+          "noopener,noreferrer"
+        ),
     },
     {
       icon: <FaInstagram size={42} />,
       label: "Instagram",
-      onClick: () => navigate(""),
+      onClick: () =>
+        window.open(
+          "https://www.instagram.com/leandrookamada/",
+          "_blank",
+          "noopener,noreferrer"
+        ),
     },
     {
       icon: <FaLinkedin size={42} />,
       label: "LinkedIn",
-      onClick: () => navigate(""),
+      onClick: () =>
+        window.open(
+          "https://www.linkedin.com/in/leandrokamada/",
+          "_blank",
+          "noopener,noreferrer"
+        ),
     },
   ];
   return (
