@@ -1,10 +1,32 @@
 import styles from "./HomeEsquerda.module.css";
 import BlurText from "../../../block/TextAnimations/BlurText/BlurText";
-// import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import Dock from "../../../block/Components/Dock/Dock";
+
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+
 export function HomeEsquerda() {
   const handleAnimationComplete = () => {
     console.log("Animation completed!");
   };
+  const navigate = useNavigate();
+  const items = [
+    {
+      icon: <FaGithub size={42} />,
+      label: "Github",
+      onClick: () => navigate("https://github.com/leandrookamada"),
+    },
+    {
+      icon: <FaInstagram size={42} />,
+      label: "Instagram",
+      onClick: () => navigate(""),
+    },
+    {
+      icon: <FaLinkedin size={42} />,
+      label: "LinkedIn",
+      onClick: () => navigate(""),
+    },
+  ];
   return (
     <main className={styles.main}>
       <BlurText
@@ -23,6 +45,13 @@ export function HomeEsquerda() {
         novos desafios para evoluir e transformar ideias em experiências
         digitais de valor.
       </p>
+      <Dock
+        className={styles.Dock}
+        items={items}
+        panelHeight={68}
+        baseItemSize={50}
+        magnification={70}
+      />
     </main>
   );
 }

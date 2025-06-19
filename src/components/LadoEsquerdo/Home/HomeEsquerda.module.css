@@ -28,6 +28,9 @@
   font-weight: 700;
   text-align: center;
 }
+.Dock {
+  margin-bottom: 10em;
+}
 @media (max-width: 1000px) {
   .main {
     position: relative;
