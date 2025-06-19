@@ -1,0 +1,28 @@
+.mainProjects {
+  width: 100vw;
+  height: 100vh;
+}
+.projects {
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+}
+.projectsImg {
+  width: 100%;
+  border-radius: 20px;
+}
+.projectsH1 {
+  font-family: var(--fonttitulo);
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  font-size: 2rem;
+  align-items: center;
+}
+.projectsP {
+  font-family: var(--fonttexto);
+  font-weight: 700;
+  text-align: center;
+}

@@ -3,7 +3,6 @@ import BlurText from "../../../block/TextAnimations/BlurText/BlurText";
 import Dock from "../../../block/Components/Dock/Dock";
 
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
 
 export function HomeEsquerda() {
   const handleAnimationComplete = () => {

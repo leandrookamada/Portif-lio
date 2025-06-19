@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 import { Header } from "../header/header";
 import { HomeEsquerda } from "../LadoEsquerdo/Home/HomeEsquerda";
 import { HomeDireita } from "../LadoDireito/HomeDireita/HomeDireita";
-import Folder from "../LadoDireito/projetos/ChromaGrid";
+import { Projects } from "../pages/Projects/Projects";
 import "./layout.css";
 
 export function Layout() {
@@ -15,9 +15,9 @@ export function Layout() {
         </div>
         <div className="Lado-Direito">
           <HomeDireita />
-          <Folder />
         </div>
       </div>
+      <Projects />
       <Outlet />
     </>
   );
