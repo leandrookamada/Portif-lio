@@ -9,7 +9,6 @@ export function HomeEsquerda() {
   const handleAnimationComplete = () => {
     console.log("Animation completed!");
   };
-  const navigate = useNavigate();
   const items = [
     {
       icon: <FaGithub size={42} />,
